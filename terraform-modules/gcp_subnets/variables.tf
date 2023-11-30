@@ -28,12 +28,12 @@ variable "project" {
   description = "The ID of the project in which the resource belongs. If it is not provided, the provider project is used."
 }
 
-#variable "private_ip_google_access" {
-#  type        = bool
-#  default     = true
-#  description = "When enabled, VMs in this subnetwork without external IP addresses can access Google APIs and services by using Private Google Access."
-#}
+variable "private_ip_google_access" {
+ type        = bool
+ default     = true
+ description = "When enabled, VMs in this subnetwork without external IP addresses can access Google APIs and services by using Private Google Access."
+}
 
-#variable "secondary_ip_range" {
-#  description = "The secondary IP ranges for POD and services"
-#}
+variable "secondary_ip_range" {
+ description = "The secondary IP ranges for POD and services"
+}

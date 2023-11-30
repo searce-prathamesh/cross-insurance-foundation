@@ -1,7 +1,7 @@
 
 resource "google_folder" "folders" {
-  for_each = toset(var.names)
 
-  display_name = each.value
+  display_name = var.names
   parent       = var.parent
 }
+
